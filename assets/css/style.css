@@ -16,6 +16,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     color: var(--primary);
+    background-color: var(--secondary);
 }
 
 /* header and nav link stylings */
@@ -82,9 +83,9 @@ header nav ul li a {
     /*position: relative;*/
 }
 
-.hero div{
+/*.hero div{
     display: flex;
-}
+}*/
 
 .hero img {
     height: 400px;
@@ -101,4 +102,25 @@ header nav ul li a {
 
 .hero .quote #quote-text {
     font-size: 48px;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 48px;
+    /*font-weight: normal;*/
+    padding: 0 40px;
+    border-right: 5px solid var(--pop);
+    height: 100%;
+    text-align: right;
+}
+
+.about-me p {
+    font-size: 20px;
+    padding: 0 15px;
+    line-height: 1.6;
 }
