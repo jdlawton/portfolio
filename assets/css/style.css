@@ -70,3 +70,35 @@ header nav ul li a {
     
 
 }
+
+.hero {
+    background-image: url("../images/brickwall.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*position: relative;*/
+}
+
+.hero div{
+    display: flex;
+}
+
+.hero img {
+    height: 400px;
+    
+}
+
+.hero .quote {
+    font-size: 35px;
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    color: lightgray;
+}
+
+.hero .quote #quote-text {
+    font-size: 48px;
+}
