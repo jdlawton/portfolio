@@ -19,7 +19,7 @@ body {
     background-color: var(--secondary);
 }
 
-/* header and nav link stylings */
+/* header styling start */
 header {
     background-color: var(--primary);
     display: flex;
@@ -39,7 +39,6 @@ header h1 {
     background-color: var(--secondary);
     padding: 10px;
     border: 5px solid var(--pop);
-    /*text-shadow: 3px 3px 5px rgba(0,0,0,0.5);*/
     
 }
 
@@ -68,7 +67,10 @@ header nav ul li a {
     border-bottom: 4px solid var(--secondary);
     margin: 0 20px 0 0;
 }
+/* header styling end */
 
+
+/* hero styling start */
 .hero {
     background-image: url("../images/brickwall.jpg");
     height: 600px;
@@ -77,12 +79,7 @@ header nav ul li a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /*position: relative;*/
 }
-
-/*.hero div{
-    display: flex;
-}*/
 
 .hero img {
     height: 400px;
@@ -100,23 +97,25 @@ header nav ul li a {
 .hero .quote #quote-text {
     font-size: 48px;
 }
+/* hero styling end */
 
+/* utility class styling start */
 .title {
-    /*width: 20%;*/
     border-right: 5px solid var(--pop);
     min-height: 100%;
     text-align: right;
     padding-right: 40px;
-    min-width: 240px;
-    max-width: 240px;
+    min-width: 20%;
+    max-width: 20%;
 
 }
+/* utility class styling end */
 
+/* about me section styling start */
 .about-me {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    /*margin-top: 20px;*/
     padding-top: 30px;
 }
 
@@ -129,20 +128,59 @@ header nav ul li a {
     padding: 0 15px;
     line-height: 1.6;
 }
+/* about me section styling end */
 
+/* my work section styling start */
 .my-work {
     padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
 }
 
 .my-work h2 {
     font-size: 48px;
 }
-/*==================================================*/
 
-.flex-row {
+.projects-wrapper {
+    width: 80%;
+    height: 500px;
     display: flex;
+    justify-content: center;
 }
 
+.my-projects {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.project {
+    /*width: 100%;
+    height: 100%;*/
+    background-color: orange;
+    border: solid;
+    color: black;
+    padding: 1em;
+}
+
+.primary-project {
+    grid-column: 1/3;
+    grid-row: span 2;
+}
+
+.additional-project {
+    
+}
+
+/*.additional-project {
+    grid-row: 1/2;
+}*/
+/* my work section styling end */
+
+/* contact me section styling start */
 footer {
     display: flex;
     justify-content: space-between;
@@ -150,10 +188,17 @@ footer {
     padding-top: 30px;
 }
 
-.contact-list {
+.content-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-list {
     width: 60%;
-    padding-right: 100px;
-    align-self: center;
+    /*padding-right: 100px;
+    align-self: center;*/
 }
 
 footer h2 {
@@ -164,7 +209,7 @@ footer ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
 }
 
@@ -172,6 +217,43 @@ footer ul li a {
     text-decoration: none;
     color: var(--primary);
     padding: 0 30px;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bolder;
+}
+/* contact me section styling end */
+
+
+
+/*TEST SECTION */
+.test {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.box1 {
+    background-color: red;
+    width: 10%;
+    text-align: right;
+    border-right: 5px solid blue;
+}
+
+.box2-wrap {
+    background-color: yellow;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box2 {
+    background-color: cyan;
+    width: 50%;
+}
+
+.box2 h2 {
+    text-align: center;
 }
