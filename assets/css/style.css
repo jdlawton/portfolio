@@ -54,7 +54,6 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    
 }
 
 header nav {
@@ -68,8 +67,6 @@ header nav ul li a {
     font-size: 18px;
     border-bottom: 4px solid var(--secondary);
     margin: 0 20px 0 0;
-    
-
 }
 
 .hero {
@@ -104,23 +101,65 @@ header nav ul li a {
     font-size: 48px;
 }
 
+.title {
+    width: 20%;
+    border-right: 5px solid var(--pop);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 40px;
+
+}
+
 .about-me {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     margin-top: 20px;
 }
 
-.section-title {
+.about-me h2 {
     font-size: 48px;
-    /*font-weight: normal;*/
-    padding: 0 40px;
-    border-right: 5px solid var(--pop);
-    height: 100%;
-    text-align: right;
 }
 
 .about-me p {
     font-size: 20px;
     padding: 0 15px;
     line-height: 1.6;
+}
+
+/*==================================================*/
+
+.flex-row {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.contact-list {
+    width: 40%;
+}
+
+footer h2 {
+    font-size: 48px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    padding: 0 30px;
+    font-size: 36px;
+    font-weight: bolder;
 }
