@@ -280,7 +280,7 @@ footer ul li a:hover {
     }
 }
 
-/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+/* MEDIA QUERY FOR MOBILE PHONE SCREENS AND SMALLER */
 @media screen and (max-width: 575px) {
     header {
         justify-content: center;
