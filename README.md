@@ -16,5 +16,5 @@ For this challenge I wrote the HTML and CSS for a sample professional portfolio 
 Link to deployed application:
 https://jdlawton.github.io/portfolio/
 
-![Project Screenshot](./assets/images/portfolioscreenshot.png?raw=true)
+![Project Screenshot](/portfolioscreenshot.png?raw=true)
 
