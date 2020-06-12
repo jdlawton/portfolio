@@ -39,7 +39,6 @@ header h1 {
     background-color: var(--secondary);
     padding: 10px;
     border: 5px solid var(--pop);
-    
 }
 
 header a {
@@ -50,22 +49,20 @@ header a {
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     list-style: none;
 }
 
 header nav {
-    display: flex;
-    
-
+    /*display: flex;*/
+    margin: 20px;
 }
 
 header nav ul li a {
     padding: 10px 5px 3px 5px;
     font-size: 18px;
-    border-bottom: 4px solid var(--secondary);
-    margin: 0 20px 0 0;
+    /*border-bottom: 4px solid var(--secondary);*/
+    margin: 20px 20px 0 0;
 }
 /* header styling end */
 
@@ -83,7 +80,6 @@ header nav ul li a {
 
 .hero img {
     height: 400px;
-    
 }
 
 .hero .quote {
@@ -107,8 +103,12 @@ header nav ul li a {
     padding-right: 40px;
     min-width: 20%;
     max-width: 20%;
-
 }
+
+.title h2 {
+    font-size: 48px;
+}
+
 /* utility class styling end */
 
 /* about me section styling start */
@@ -119,14 +119,11 @@ header nav ul li a {
     padding-top: 30px;
 }
 
-.about-me h2 {
-    font-size: 48px;
-}
-
 .about-me p {
     font-size: 20px;
-    padding: 0 15px;
+    padding: 0 30px;
     line-height: 1.6;
+    width: 90%;
 }
 /* about me section styling end */
 
@@ -135,11 +132,6 @@ header nav ul li a {
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
-    /*flex-wrap: wrap;*/
-}
-
-.my-work h2 {
-    font-size: 48px;
 }
 
 .projects-grid-wrapper {
@@ -158,14 +150,14 @@ header nav ul li a {
 }
 
 .project {
-    /*width: 100%;
-    height: 100%;*/
     border: solid;
     color: black;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     text-decoration: none;
+    background-size: cover;
+    background-position: center;
 }
 
 .project-label {
@@ -173,42 +165,29 @@ header nav ul li a {
     padding: 10px;
 }
 
-.project1 {
+.run-buddy {
     grid-column: 1/3;
     grid-row: span 2;
     background-image: url("../images/runbuddy.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
-.project2 {
+.robot-gladiators {
     background-image: url("../images/robotgladiators.jpg");
-    background-size: cover;
     background-position: 50% 15%;
-
 }
 
 .project3 {
     background-image: url("../images/water.jpg");
-    background-size: cover;
     background-position: 50% 80%;
 }
 
 .project4 {
     background-image: url("../images/security.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .project5 {
     background-image: url("../images/canyon.jpg");
-    background-size: cover;
-    background-position: center;
 }
-
-/*.additional-project {
-    grid-row: 1/2;
-}*/
 /* my work section styling end */
 
 /* contact me section styling start */
@@ -217,6 +196,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .content-wrapper {
@@ -228,12 +208,6 @@ footer {
 
 #contact-list {
     width: 60%;
-    /*padding-right: 100px;
-    align-self: center;*/
-}
-
-footer h2 {
-    font-size: 48px;
 }
 
 footer ul {
@@ -246,45 +220,101 @@ footer ul {
     font-weight: bolder;
 }
 
+footer ul li {
+    padding-bottom: 15px;
+}
+
 footer ul li a {
     text-decoration: none;
     color: var(--primary);
+
 }
 /* contact me section styling end */
 
+/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .hero .quote {
+        font-size: 28px;
+        padding-right: 20px;
+    }
+    
+    .hero .quote #quote-text {
+        font-size: 35px;
+    }
 
+    .title h2 {
+        font-size: 35px;
+    }
 
-/*TEST SECTION */
-.test {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 100px;
+    .about-me p {
+        font-size: 16px;
+        /*padding: 0 15px;*/
+        line-height: 1.6;
+    }
 }
 
-.box1 {
-    background-color: red;
-    width: 10%;
-    text-align: right;
-    border-right: 5px solid blue;
-}
+/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
 
-.box2-wrap {
-    background-color: yellow;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    header nav ul {
+        min-height: 80px;
+    }
 
-.box2 {
-    background-color: cyan;
-    width: 50%;
-}
+    .hero {
+        flex-direction: column;
+    }
 
-.box2 h2 {
-    text-align: center;
-}
+    .about-me {
+        flex-direction: column;
+    }
 
+    .title {
+        border-bottom: 5px solid var(--pop);
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about-me p {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .my-work {
+        flex-direction: column;
+    }
+
+    .projects-grid-wrapper {
+        width: 100%;
+    }
+    
+    .projects-grid {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    footer ul li {
+        padding: 10px;
+        text-align: center;
+    }
+    
+}
