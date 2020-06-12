@@ -54,16 +54,22 @@ header nav ul {
 }
 
 header nav {
-    /*display: flex;*/
     margin: 20px;
 }
 
 header nav ul li a {
-    padding: 10px 5px 3px 5px;
-    font-size: 18px;
-    /*border-bottom: 4px solid var(--secondary);*/
+    padding: 8px;
+    font-size: 28px;
     margin: 20px 20px 0 0;
+    font-weight: bold;
 }
+
+header nav ul li a:hover {
+    background: var(--pop);
+    color: var(--primary);
+    border-radius: 15px;
+}
+
 /* header styling end */
 
 
@@ -129,9 +135,14 @@ header nav ul li a {
 
 /* my work section styling start */
 .my-work {
-    padding-top: 30px;
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
+    background-color: var(--primary);
+}
+
+.my-work h2 {
+    color: var(--secondary);
 }
 
 .projects-grid-wrapper {
@@ -158,11 +169,11 @@ header nav ul li a {
     text-decoration: none;
     background-size: cover;
     background-position: center;
+    opacity: 0.5;
 }
 
-.project-label {
-    background-color: white;
-    padding: 10px;
+.project:hover {
+    opacity: 1.0;
 }
 
 .run-buddy {
@@ -187,6 +198,13 @@ header nav ul li a {
 
 .project5 {
     background-image: url("../images/canyon.jpg");
+}
+
+.project-label {
+    /*background-color: var(--secondary);*/
+    background-color: lightgray;;
+    color: var(--primary);
+    padding: 10px;
 }
 /* my work section styling end */
 
@@ -221,13 +239,22 @@ footer ul {
 }
 
 footer ul li {
-    padding-bottom: 15px;
+    /*padding-bottom: 15px;*/
+    font-weight: bold;
+
 }
 
 footer ul li a {
     text-decoration: none;
     color: var(--primary);
+    padding: 8px;
+    font-weight: bold;
+}
 
+footer ul li a:hover {
+    background: var(--pop);
+    color: var(--secondary);
+    border-radius: 15px;
 }
 /* contact me section styling end */
 
@@ -290,10 +317,12 @@ footer ul li a {
 
     .my-work {
         flex-direction: column;
+        padding: 30px 0;
     }
 
     .projects-grid-wrapper {
         width: 100%;
+        padding: 10px;
     }
     
     .projects-grid {
